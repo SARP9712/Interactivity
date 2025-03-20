@@ -16,7 +16,7 @@ const App = () =>  {
     {!isIntroFinished && <Intro onIntroEnd={handleIntroEnd} />} {/* Muestra la intro si no ha terminado */}
     {isIntroFinished && (
       <>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage />} />
