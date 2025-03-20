@@ -1,9 +1,9 @@
 import React from "react";
 import "./FullScreenMenu.css";
 
-const FullScreenMenu = ({ onClose }) => {
+const FullScreenMenu = ({ onClose, isActive }) => {
   return (
-    <div className="fullscreen-menu">
+    <div className={`fullscreen-menu ${isActive ? "active" : ""}`}>
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Servicios</a></li>

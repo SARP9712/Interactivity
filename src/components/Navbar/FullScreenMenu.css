@@ -1,25 +1,50 @@
-.fullscreen-menu{
-    display: grid;
-    overflow: none;
-    place-items:initial;
-    overflow-y: none;
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;  /* Inicialmente fuera de la pantalla */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.5s ease-in-out;  /* Animación suave */
 }
-ul{
+
+/* Cuando el menú está activo, entra a la pantalla */
+.fullscreen-menu.active {
+    right: 0;
+}
+
+/* Botón de cierre */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* Estilos de lista */
+ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0;
 }
 
-li{
+li {
     list-style: none;
-    
-    gap: 20px;
-
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-family: "Open Sans", sans-serif;
     font-size: 4rem;
+    text-transform: uppercase;
 }

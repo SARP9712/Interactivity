@@ -28,7 +28,7 @@ const Navbar1 = () => {
 
       
     </div>
-    {isOpen && <FullScreenMenu onClose={toggleMenu} />}
+    <FullScreenMenu isActive={isOpen} />
   </>
   );
 };
