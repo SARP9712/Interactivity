@@ -1,0 +1,71 @@
+.menu-container {
+    position: absolute;
+    display: flex; /* Cambio de inline-flex a flex para mejor ajuste */
+    align-items: center;
+    right: 0;
+    gap: 10px;
+    font-family: "Open Sans", sans-serif;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 25px;
+    transition: width 0.3s ease, padding 0.3s ease; /* Transición para suavizar el ajuste */
+    outline: none; 
+    user-select: none; 
+    overflow: hidden; /* Evita que los elementos sobresalgan al cambiar el tamaño */
+}
+
+.menu-container.open {
+    width: 20px; /* Ajusta el tamaño cuando se oculta MENU */
+    padding: 10px; /* Reduce el padding para que el cuadro no sea tan grande */
+}
+
+/* Botón del menú */
+.menu-button {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    outline: none; 
+    user-select: none; /* Evita la selección del botón */
+}
+
+/* Líneas del botón */
+.line {
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-button.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-button.open .line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-button.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Texto del menú */
+.menu-desc {
+    font-size: 16px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+}
+
+.menu-desc.hidden {
+    opacity: 0;
+    display: none;
+}
+

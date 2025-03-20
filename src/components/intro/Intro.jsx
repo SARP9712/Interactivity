@@ -12,6 +12,7 @@ const Intro = ({ onIntroEnd })=> {
         })
     }, [onIntroEnd])
 
+    
 return(
 
     <div className="intro-container">
