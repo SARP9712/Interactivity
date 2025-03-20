@@ -1,0 +1,25 @@
+.fullscreen-menu{
+    display: grid;
+    overflow: none;
+    place-items:initial;
+    overflow-y: none;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    list-style: none;
+    
+    gap: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-size: 4rem;
+}

@@ -34,6 +34,27 @@
     outline: none; 
     user-select: none; /* Evita la selección del botón */
 }
+/* Contenido del menú desplegado */
+.menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-content.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
 
 /* Líneas del botón */
 .line {

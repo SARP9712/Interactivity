@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import FullScreenMenu from "./FullScreenMenu";
 import "./Navbar.css";
 
 const Navbar1 = () => {
@@ -16,6 +17,7 @@ const Navbar1 = () => {
   };
 
   return (
+    <>
     <div className={`menu-container ${isOpen ? "open" : ""}`}>
       <button className={`menu-button ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
         <div className="line"></div>
@@ -23,7 +25,11 @@ const Navbar1 = () => {
         <div className="line"></div>
       </button>
       {!hideText && <span className={`menu-desc ${isOpen ? "hidden" : ""}`}> MENU </span>}
+
+      
     </div>
+    {isOpen && <FullScreenMenu onClose={toggleMenu} />}
+  </>
   );
 };
 

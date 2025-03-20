@@ -18,7 +18,7 @@ return(
     <div className="intro-container">
         <div className="intro-content">
             <h1>Bienvenido a mi pagina</h1>
-            <p> Estamos cargando algo increible para uds</p>
+            <p> Estamos cocinando algo delicioso para uds🍳 </p>
         </div>
 
     </div>
