@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Intro from './components/intro/intro';
+import Intro from './components/intro/Intro.jsx'; 
+
 
 
 const App = () =>  {
