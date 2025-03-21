@@ -33,7 +33,7 @@
     cursor: pointer;
     outline: none; 
     user-select: none; /* Evita la selección del botón */
-    z-index: 10;
+    z-index: 20;
 }
 /* Contenido del menú desplegado */
 .menu-content {

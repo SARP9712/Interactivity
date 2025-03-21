@@ -5,6 +5,7 @@ import { Routes, Route, useNavigate } from 'react-router-dom'; // Usamos Routes,
 import Intro from './components/intro/Intro.jsx';
 import initBarba from './barba.js';
 import Home from './Pages/Home/Home.jsx';
+import "./App.css"
 
 const App = () => {
   const [isIntroFinished, setIntroFinished] = useState(false);

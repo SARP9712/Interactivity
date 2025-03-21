@@ -47,4 +47,6 @@ a {
     font-family: "Open Sans", sans-serif;
     font-size: 4rem;
     text-transform: uppercase;
+    outline: none; 
+    user-select: none; 
 }

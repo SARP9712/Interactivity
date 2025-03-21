@@ -1,5 +1,6 @@
 import React from "react";
 import "./FullScreenMenu.css";
+import A from "../../assets/A.svg"
 
 const FullScreenMenu = ({ onClose, isActive }) => {
   return (
@@ -9,6 +10,8 @@ const FullScreenMenu = ({ onClose, isActive }) => {
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Nosotros</a></li>
         <li><a href="#">Contacto</a></li>
+    
+
       </ul>
     </div>
   );

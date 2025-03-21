@@ -1,0 +1,31 @@
+/* 🔹 Elimina márgenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Asegura que el `body` ocupe toda la pantalla */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* 🔹 Establece una fuente base */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 🔹 Elimina estilos predeterminados de listas */
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 🔹 Asegura que enlaces no tengan subrayado por defecto */
+a {
+    text-decoration: none;
+    color: inherit;
+}
