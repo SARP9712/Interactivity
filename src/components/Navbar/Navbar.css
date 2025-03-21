@@ -16,8 +16,8 @@
 }
 
 .menu-container.open {
-    width: 20px; /* Ajusta el tamaño cuando se oculta MENU */
-    padding: 10px; /* Reduce el padding para que el cuadro no sea tan grande */
+    min-width: 50px; /* Asegura un tamaño suficiente para el botón */
+    padding: 10px; 
 }
 
 /* Botón del menú */

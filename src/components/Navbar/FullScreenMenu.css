@@ -19,7 +19,6 @@
 
 /* Botón de cierre */
 .close-button {
-    position: absolute;
     top: 20px;
     right: 20px;
     background: none;
@@ -27,6 +26,8 @@
     color: black;
     font-size: 32px;
     cursor: pointer;
+    position: relative;
+    z-index: 100;
 }
 
 /* Estilos de lista */
